@@ -1,0 +1,176 @@
+%-------------------------
+% Resume in Latex
+% Template Author : Sourabh Bajaj
+% Adopted by : Dongdong Wei
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newenvironment{paperitemize}
+{ \begin{enumerate}
+		\setlength{\itemsep}{10pt}
+		\setlength{\parskip}{-10pt}
+		\setlength{\parsep}{0pt}     }
+	{ \end{enumerate}                  } 
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\href{https://redone17.github.io/}{\Large Dongdong Wei}} & Email : \href{mailto:do1@ualberta.ca}{do1@ualberta.ca}\\
+	PhD student & Mobile : +1-780-604-0758\\
+	Department of Mechanical Engineering, University of Alberta\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+		{University of Alberta}{Edmonton, Canada}
+		{PhD student - Mechanical Engineering; Supervisor: Ming Jian Zuo}{Sep. 2018 -- now}
+	\resumeSubheading
+		{University of Electronic Science and Technology of China}{Chengdu, China}
+		{Master - Mechanical Engineering; Supervisor: Ke Sheng Wang}{Sep. 2015 -- Jun. 2018}
+	\resumeSubheading
+		{University of Electronic Science and Technology of China}{Chengdu, China}
+		{Bachelor - Engineering Internet of Things}{Sep. 2011 -- Jun. 2015}
+	\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Research}
+	\resumeSubHeadingListStart
+	\resumeSubItem{AI-based machinery fault diagnosis}
+		{Study deep neural networks for remote surveillance of machine's fault conditions, such as gear cracks and bearing deficits in wind turbines and other rotating machines. Transfer learning methods will be developed to combat the problems of limited data and (or) label and promote generalization of AI.} 
+	\resumeSubHeadingListEnd
+
+%-----------Paper----------------- 
+\section{Lead authorship}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Publications}{ 
+		\begin{paperitemize}
+			\item Wei, Dongdong and Wang, Kesheng and Zhang, Mian and Zuo, Ming Jian. 2018. Sweep excitation with order tracking: A new tactic for beam crack analysis. Journal of Sound and Vibration, vol. 420, pp.129-141. \href{https://doi.org/10.1016/j.jsv.2018.01.021}{doi: 10.1016/j.jsv.2018.01.021}
+			\item Wei, Dongdong and Wang, Kesheng and Heyns, Stephan and Zuo, Ming Jian. 2018. Convolutional Neural Networks for Fault Diagnosis Using Rotating Speed Normalized Vibration. In Advances in Condition Monitoring of Machinery in Non-Stationary Operations. CMMNO 2018. Applied Condition Monitoring, vol 15. Springer, Cham. Santander, Spain, June 20-22, 2018. \href{https://doi.org/10.1007/978-3-030-11220-2_8}{doi: 10.1007/978-3-030-11220-2\_8}
+		\end{paperitemize} }
+	
+	\resumeSubItem{Working papers}{ 
+		\begin{paperitemize}
+			\item Wei, Dongdong and Han, Te and Chu, Fulei and Zuo, Ming Jian. 2020. Weighted domain adversarial network for machinery fault diagnosis. In progress. 
+			\item Wei, Dongdong and Han, Te and Chu, Fulei and Zuo, Ming Jian. 2020. Adversarial domain adaptation for gear crack level classification under variable load. Accepted by \href{http://www.aparm2020.org/}{APARM 2020 (online), Vancouver, Canada, August 20-23, 2020}. 
+	\end{paperitemize} }
+	
+	\resumeSubHeadingListEnd
+
+%-----------AWARDS-----------------
+\section{Awards \& Honors}
+	\resumeSubHeadingListStart
+	\resumeSubItem{PHM Society's Doctoral Symposium}{funded attendee \hfill 2020}
+	\resumeSubItem{PHM Society's Data Challenge }{3rd place \hfill 2019}
+	\resumeSubItem{Chinese Scholarship Council}{PhD scholarship \hfill 2018}
+	\resumeSubItem{Outstanding bachelor dissertation}{10\% \hfill 2015}
+	\resumeSubHeadingListEnd
+  
+%-----------Skills-----------------
+\section{Skills}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{Mandarin (mother tongue) and English}
+	\resumeSubItem{Software}{\LaTeX, Microsoft Office, Git, Docker}
+	\resumeSubItem{Programming}{Python, Matlab}
+	
+	\resumeSubHeadingListEnd
+  
+ %-----------Activities-----------------
+ \section{Activities}
+	 \resumeSubHeadingListStart
+	 \resumeSubItem{Choir Singer}{UofA Concert Choir: 2018-2019; UESTC Choir: 2012-2016}
+	 \resumeSubItem{Volunteer}{2016 UNESCO Asian Youth Dialogue; IEEE PHM-2016 Chengdu; Campus ambassador in the 60th anniversary of UESTC (2016); Inheritor of national intangible cultural heritage of China (2014-2016)}
+	 
+	 \resumeSubHeadingListEnd
+	 
+
+  
+% --------Multiple Positions Heading------------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\end{document}
