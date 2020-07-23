@@ -1,4 +1,4 @@
-## My resume. 
+## [My resume](./DWei_resume.pdf). 
  Welcome to visit [my personal page](https://redone17.github.io/)
 
 \
